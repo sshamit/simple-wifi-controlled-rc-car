@@ -13,22 +13,22 @@ R"(
         <div class="row" style="height: 33.33%; padding-top: 1em; padding-bottom:1em">
           <div class="col-xs-8" ></div>
           <div class="col-xs-4" style="text-align: center; height: 100%">
-            <button id="drive" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("forward")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("forward")' ontouchend='makeAjaxCall("driveStop")'>Drive</button>
+            <button id="drive" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("forward")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("forward")' ontouchend='makeAjaxCall("driveStop")'><img src="./up.png" style="width: inherit;"></button>
           </div>
         </div>
         <div class="row" style="height: 33.33%; padding-bottom:1em">
           <div class="col-xs-4" style="height: 100%; text-align: center">
-            <button id="left" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("left")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("left")' ontouchend='makeAjaxCall("steerStop")'>Left</button>
+            <button id="left" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("left")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("left")' ontouchend='makeAjaxCall("steerStop")'><img src="./left.png" style="width: inherit;"></button>
           </div>
           <div class="col-xs-4" style="height: 100%; text-align: center">
-            <button id="right" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("right")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("right")' ontouchend='makeAjaxCall("steerStop")'>Right</button>
+            <button id="right" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("right")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("right")' ontouchend='makeAjaxCall("steerStop")'><img src="./right.png" style="width: inherit;"></button>
           </div>
           <div class="col-xs-4" ></div>
         </div>
         <div class="row" style="height: 33.33%; padding-bottom:1em">
           <div class="col-xs-8" ></div>
           <div class="col-xs-4" style="height: 100%; text-align: center">
-            <button id="back" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("back")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("back")' ontouchend='makeAjaxCall("driveStop")'>Back</button>
+            <button id="back" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("back")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("back")' ontouchend='makeAjaxCall("driveStop")'><img src="./down.png" style="width: inherit;"></button>
           </div>
         </div>
       </div>
@@ -53,7 +53,6 @@ R"(
               makeAjaxCall("back");   
           }
       });
-
       document.addEventListener('keyup', function(event) {
           if(event.keyCode == 37 ||event.keyCode == 39 ) {
               //Left or Right Arrow
@@ -67,5 +66,4 @@ R"(
     </script>-->
   </body>
 </html>
-
 )"
